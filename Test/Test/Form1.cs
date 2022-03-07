@@ -21,5 +21,15 @@ namespace Test
         {
 
         }
+
+        private void btnlogin_Click(object sender, EventArgs e)
+        {
+            string user = txtUserName.Text;
+            string pass = txtpassword.Text;
+            if (user == "admin" && pass == "admin")
+                MessageBox.Show("Đăng nhập thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            else
+                MessageBox.Show("Sai thông tin zồi!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
     }
 }
